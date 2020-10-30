@@ -16,9 +16,12 @@ function Header() {
     header.className = "header";
     let date = document.createElement("span");
     date.className = "date";
+    date.textContent = "MARCH 28, 2020";
     let lambdaTimes = document.createElement("h1");
+    lambdaTimes.textContent = "Lambda Times";
     let temp = document.createElement("span");
     temp.className = "temp";
+    temp.textContent = "98°";
 
     header.appendChild(date);
     header.appendChild(lambdaTimes);
