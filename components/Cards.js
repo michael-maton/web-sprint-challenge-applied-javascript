@@ -79,5 +79,4 @@ axios
             console.log(cardHL.textContent);
         });
         return card;
-    
     }
