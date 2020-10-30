@@ -51,7 +51,16 @@ axios
         });
     })
     .catch((error) => {
-        console.log(error);
+        let card = document.createElement("div");
+        card.className = "card";
+        let cardHL = document.createElement("div");
+        cardHL.className = ("headline");
+        cardHL.textContent = error;
+        cardHL.style.textAlign = "center";
+        card.appendChild(cardHL);
+        articles.appendChild(card);
+
+        // alert(error);
     })
 
     function articleMaker (articleObj) {
