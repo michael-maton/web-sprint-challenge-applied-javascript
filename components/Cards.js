@@ -49,7 +49,6 @@ axios
             let newArticle = articleMaker(item);
             articles.appendChild(newArticle);
         });
-        
     })
     .catch((error) => {
         console.log(error);
@@ -75,6 +74,10 @@ axios
         author.appendChild(imgContainer);
         author.appendChild(name);
         imgContainer.appendChild(photo);
-    
+        
+        card.addEventListener("click", () =>{
+            console.log(cardHL.textContent);
+        });
         return card;
+    
     }
